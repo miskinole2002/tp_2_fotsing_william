@@ -23,24 +23,24 @@ session_start();
             <h2><center><span class="important">adresse </span><?php echo $i ?></center></h2>
         <DIV>
            <center> <label for="street"><span class="important">street</span> <?php echo $i ?></label>    
-            <input type="text" id="street" name="street<?php echo $i ?>"></center>
+            <input type="text" id="street" name="street<?php echo $i ?>" value=""></center>
         </DIV>
         <DIV>
             <center>
             <label for="street_nb"><span class="important">street_nb</span> <?php echo $i ?></label>
-            <input type="number" id="street_nb" name="street_nb<?php echo $i ?>"></center>
+            <input type="number" id="street_nb" name="street_nb<?php echo $i ?>" value=""></center>
         </DIV>
         <DIV><center>
             <label for="type"><span class="important">type</span> <?php echo $i ?></label>
-            <input type="text" id="type" name="type<?php echo $i ?>"></center>
+            <input type="text" id="type" name="type<?php echo $i ?>"value="" ></center>
         </DIV>
         <DIV><center>
             <label for="city"><span class="important">city</span> <?php echo $i ?></label>
-            <input type="text" id="city" name="city<?php echo $i ?>"></center>
+            <input type="text" id="city" name="city<?php echo $i ?>" value="" ></center>
         </DIV>
         <DIV><center>
             <label for="zipcode"><span class="important">zipcode</span> <?php echo $i ?></label>
-            <input type="text" id="zipcode" name="zipcode<?php echo $i ?>">
+            <input type="text" id="zipcode" name="zipcode<?php echo $i ?>" value="">
         </DIV></center>
         <?php } ?>
                 <div><center>
