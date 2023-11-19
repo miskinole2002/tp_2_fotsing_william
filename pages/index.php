@@ -64,6 +64,17 @@ if($conn){?>
 // insertion dans la db
             else
             { 
+                ?>
+                              <p><center><b>addresse<?php echo$i ?></b></center></p>
+                <p><center> le street<?php echo $i?> est :<?php echo $_POST["street$i"]?></center></p>
+                <p><center>le street_nb<?php echo $i?> est :<?php echo $_POST["street_nb$i"]?></center></p>
+                <p><center>le type<?php echo $i?>  est :<?php echo $_POST["type$i"]?></center></p>
+                <p><center>city<?php echo $i?>est :<?php echo $_POST["city$i"]?></center></p>
+                <p><center>zipcode<?php echo $i?> est :<?php echo $_POST["zipcode$i"]?></center></p>
+            
+                <?php
+
+
                 $data[$i]=[
                     "street"=> $_POST["street$i"],
                     "street_nb"=>$_POST["street_nb$i"],
@@ -73,8 +84,8 @@ if($conn){?>
                     
                 ];
                 $addres=createAddress($data[$i]);
-                var_dump($addres);
-                var_dump([$data[$i]]);
+               // var_dump($addres);
+                //var_dump([$data[$i]]);
             }
         } 
             ;
