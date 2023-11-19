@@ -1,4 +1,5 @@
 <?php
+require_once("userCrud.php");
 function streetIsValid($data)
 {
     $length = strlen($data);
@@ -18,8 +19,8 @@ function streetIsValid($data)
             "is valid"=> false,
             "message"=> "le street est trop long ",
         ];
+   
     }
-
     return $reponse;
 }
 
